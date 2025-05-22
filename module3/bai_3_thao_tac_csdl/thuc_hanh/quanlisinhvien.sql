@@ -50,7 +50,7 @@ insert into subjects
  (4,'RDBMS',10, 1);
  insert into mark(sub_id,student_id,mark,examtimes)
  values(1,1,8,1),
- (1,2,10,2),
+ (1,2,19,2),
  (2,1,12,1);
 
 select*from student;
@@ -87,3 +87,33 @@ from student s join mark m on s.student_id=m.student_id
 join subjects sub on  m.sub_id = sub.sub_id
 order by m.mark DESC ,s.student_name ;
 
+select address, count(student_id) as'so luong hoc vien'
+from student 
+group by address;
+
+select s.student_id, s.student_name, avg(mark) 
+from student s join mark m on s.student_id=m.student_id
+group by s.student_id, s.student_name;
+
+select s.student_id, s.student_name, avg(mark)
+from student s join mark m on s.student_id= m.student_id
+group by s.student_id
+order by (s.student_id) desc 
+limit 1;
+-- Hiển thị tất cả các thông tin môn học (bảng subject) có credit lớn nhất.
+select * from subjects s
+order by s.credit desc
+limit 1;
+
+-- Hiển thị các thông tin môn học có điểm thi lớn nhất.
+select * from subjects s
+join mark m on s.sub_id=m.sub_id
+order by m.mark desc
+limit 1;
+-- Hiển thị các thông tin sinh viên và điểm trung bình của mỗi sinh viên,
+--  xếp hạng theo thứ tự điểm giảm dần
+select * ,avg(m.mark) as diem_trung_binh 
+from student s join mark m on s.student_id=m.student_id
+group by m.student_id
+order by m.mark desc;
+ SET GLOBAL sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));
