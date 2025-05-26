@@ -303,6 +303,13 @@ select distinct kh.ho_ten from khach_hang kh;
 -- nghĩa là tương ứng với mỗi tháng trong năm 2021
 --  thì sẽ có bao nhiêu khách hàng thực hiện đặt phòng.
 
+select month(hd.ngay_lam_hop_dong) as thang ,count(hd.ma_khach_hang) as 
+so_luong_khach
+from hop_dong hd 
+where year(hd.ngay_lam_hop_dong)=2021
+group by thang
+order by thang;
+
 -- 10.Hiển thị thông tin tương ứng với từng hợp đồng
 --  thì đã sử dụng bao nhiêu dịch vụ đi kèm.
 --  Kết quả hiển thị bao gồm ma_hop_dong,ngay_lam_hop_dong,
@@ -356,9 +363,90 @@ join hop_dong_chi_tiet hdct on dvdk.ma_dich_vu_di_kem =hdct.ma_dich_vu_di_kem
 --  ( select max(so_luong) from hop_dong_chi_tiet))
 group by dvdk.ma_dich_vu_di_kem;
 
+-- 14.Hiển thị thông tin tất cả các Dịch vụ đi kèm 
+-- chỉ mới được sử dụng một lần duy nhất.
+--  Thông tin hiển thị bao gồm ma_hop_dong,
+--  ten_loai_dich_vu, ten_dich_vu_di_kem,so_lan_su_dung
+--  (được tính dựa trên việc count các ma_dich_vu_di_kem).
 
+SET sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));
+select hd.ma_hop_dong, ldv.ten_loai_dich_vu,
+ dvdk.ten_dich_vu_di_kem,  count(dvdk.ma_dich_vu_di_kem)as so_lan_su_dung
+ from dich_vu_di_kem dvdk 
+ join hop_dong_chi_tiet hdct on dvdk.ma_dich_vu_di_kem=hdct.ma_dich_vu_di_kem
+ join hop_dong hd on hdct.ma_hop_dong=hd.ma_hop_dong
+ join dich_vu dv on hd.ma_dich_vu= dv.ma_dich_vu
+ join loai_dich_vu ldv on ldv.ma_loai_dich_vu=dv.ma_loai_dich_vu
+ group by dvdk.ma_dich_vu_di_kem
+ having so_lan_su_dung=1;
  
- 
+ -- 15.Hiển thi thông tin của tất cả nhân viên bao gồm
+--  ma_nhan_vien, ho_ten, ten_trinh_do, ten_bo_phan,
+--  so_dien_thoai, dia_chi mới chỉ lập được tối đa 3 hợp đồng
+--  từ năm 2020 đến 2021.
+
+select nv.ma_nhan_vien,nv.ho_ten,td.ten_trinh_do,bp.ten_bo_phan,nv.so_dien_thoai,nv.dia_chi
+from nhan_vien nv
+join trinh_do td on nv.ma_trinh_do=td.ma_trinh_do
+join bo_phan bp on nv.ma_bo_phan= bp.ma_bo_phan
+join hop_dong hd on nv.ma_nhan_vien= hd.ma_nhan_vien
+where (year(hd.ngay_lam_hop_dong) between 2020 and 2021)
+group by nv.ma_nhan_vien
+having count(hd.ma_hop_dong)<=3;
+
+-- 16.Xóa những Nhân viên chưa từng lập được hợp đồng nào
+--  từ năm 2019 đến năm 2021.
+select nv.ma_nhan_vien, nv.ho_ten
+from nhan_vien nv
+left join hop_dong hd on nv.ma_nhan_vien=hd.ma_nhan_vien
+where hd.ma_nhan_vien is null;
+
+-- 17.Cập nhật thông tin những khách hàng có ten_loai_khach 
+-- từ Platinum lên Diamond, chỉ cập nhật những khách hàng 
+-- đã từng đặt phòng với Tổng Tiền thanh toán trong năm 2021 
+-- là lớn hơn 10.000.000 VNĐ.
+select kh.ma_khach_hang, kh.ho_ten,lk.ten_loai_khach,lk.ma_loai_khach
+from khach_hang kh
+join loai_khach lk on kh.ma_loai_khach=lk.ma_loai_khach
+join hop_dong hd on kh.ma_khach_hang=hd.ma_khach_hang
+join hop_dong_chi_tiet hdct on hd.ma_hop_dong=hdct.ma_hop_dong
+join dich_vu_di_kem dvdk on hdct.ma_dich_vu_di_kem=dvdk.ma_dich_vu_di_kem
+join dich_vu dv on hd.ma_dich_vu=dv.ma_dich_vu
+where year( hd.ngay_lam_hop_dong)=2021
+group by kh.ma_khach_hang
+having (ifnull(sum(dv.chi_phi_thue),0)+ifnull(sum(hdct.so_luong*dvdk.gia),0))>10000000;
+
+-- 18.Xóa những khách hàng có hợp đồng trước năm 2021 
+-- (chú ý ràng buộc giữa các bảng).
+
+select kh.ma_khach_hang,kh.ho_ten, hd.ngay_lam_hop_dong 
+from khach_hang kh 
+join hop_dong hd on kh.ma_khach_hang=hd.ma_khach_hang
+where year(hd.ngay_lam_hop_dong)<2021;
+
+-- 19.Cập nhật giá cho các dịch vụ đi kèm
+--  được sử dụng trên 10 lần trong năm 2020 lên gấp đôi.
+select dvdk.ma_dich_vu_di_kem, dvdk.ten_dich_vu_di_kem, dvdk.gia,hdct.so_luong
+from dich_vu_di_kem dvdk
+join hop_dong_chi_tiet hdct on dvdk.ma_dich_vu_di_kem=hdct.ma_dich_vu_di_kem
+join hop_dong hd on hdct.ma_hop_dong=hd.ma_hop_dong
+where hdct.so_luong>10 and year(hd.ngay_lam_hop_dong);
+
+-- 20.Hiển thị thông tin của tất cả các nhân viên và khách hàng
+--  có trong hệ thống, thông tin hiển thị bao gồm
+--  id (ma_nhan_vien, ma_khach_hang), ho_ten, email, 
+--  so_dien_thoai, ngay_sinh, dia_chi.
+
+select nv.ma_nhan_vien,nv.ho_ten,
+nv.email,nv.so_dien_thoai,nv.ngay_sinh,nv.dia_chi
+from nhan_vien nv
+union
+select kh.ma_khach_hang,kh.ho_ten,kh.email,kh.so_dien_thoai,kh.ngay_sinh,kh.dia_chi
+from khach_hang kh;
+
+
+
+
 
 
 
