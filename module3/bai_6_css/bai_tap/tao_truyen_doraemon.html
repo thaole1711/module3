@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        span{
+            background-color: yellow;
+            padding: 10px;
+            display: inline;
+
+        }
+        div{
+            background-color: lavender;
+            padding: 10px;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .product{
+            display: inline-block;
+            width: 150px;
+            height: 100px;
+            background-color: lightblue;
+            margin: 10px;
+            margin-bottom: 20px;
+            padding: 50px;
+
+        }
+        .gallery{
+            display: flex;
+            grid-template-columns: repeat(2,2fr);
+            gap:10px;
+        }
+        .gallery div{
+            background-color: salmon;
+            height: 100px;
+        }
+
+    </style>
+
+</head>
+<body>
+<div class="gallery">
+    <div> anh 1</div>
+    <div> anh 2</div>
+    <div> anh 3</div>
+    <div> anh 4</div>
+</div>
+<div class="product"> sản phẩm 1</div>
+<div class="product"> sản phẩm 2</div>
+
+<span> inline1</span>
+<span> inline2</span>
+<span> inline3</span>
+<div> block 1</div>
+<div> block 2</div>
+<div> block 3</div>
+</body>
+</html>

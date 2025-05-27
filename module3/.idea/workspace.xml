@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74d70b84-725e-462c-ad1d-efa8d743881a" name="Changes" comment="" />
+    <list default="true" id="74d70b84-725e-462c-ad1d-efa8d743881a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/case_study_database/khunghiduongfurama.sql" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_database/khunghiduongfurama.sql" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,9 +15,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2xIF9uJOmeRGb6yV5BrlWtf6WZK" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -27,6 +29,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/codegym/module3",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -66,6 +69,7 @@
       <option name="presentableId" value="Default" />
       <updated>1747617536068</updated>
       <workItem from="1747617537157" duration="620000" />
+      <workItem from="1748247162577" duration="158000" />
     </task>
     <servers />
   </component>
