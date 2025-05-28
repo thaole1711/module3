@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+}
+
+.header {
+    font-family: "Bernard MT Condensed";
+    color: purple;
+    font-size: 30px;
+    height: 8%;
+    background: #CDCDCD;
+    margin-bottom: 5px;
+}
+
+.content {
+    min-height: 85%;
+}
+
+.footer {
+    text-align: center;
+    background: lightcoral;
+    height: 7%;
+}
+
+.content {
+    background: #CDCDCD;
+}
+
+.row {
+    justify-content: center;
+    display: flex;
+    background: grey;
+    cursor: pointer;
+    margin-bottom: 5px;
+
+}
+
+.left {
+    margin-right: 5px;
+}
+
+.row a {
+
+    margin-right: 15px;
+    color: violet;
+    list-style: none;
+    text-decoration: none;
+}
+
+.row a:hover {
+    color: chartreuse;
+}
+
+.row3 p {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.row5 p {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.row7 p {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.row9 p {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.row11 p {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.row11 {
+    display: flex;
+}
+
+span {
+    color: #999999;
+}
+
+.row1 {
+    display: flex;
+}
+
+.row2 {
+
+}
+
+
+.col-m-1 {
+    width: 8.33%;
+}
+
+.col-m-2 {
+    width: 16.66%;
+}
+
+.col-m-3 {
+    width: 25%;
+}
+
+.col-m-4 {
+    width: 33.33%;
+}
+
+.col-m-5 {
+    width: 41.66%;
+}
+
+.col-m-6 {
+    width: 50%;
+}
+
+.col-m-7 {
+    width: 58.33%;
+}
+
+.col-m-8 {
+    width: 66.66%;
+}
+
+.col-m-9 {
+    width: 75%;
+}
+
+.col-m-10 {
+    width: 83.33%;
+}
+
+.col-m-11 {
+    width: 91.66%;
+}
+
+.col-m-12 {
+    width: 100%;
+}
