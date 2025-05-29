@@ -1,0 +1,44 @@
+
+
+*{
+    box-sizing: border-box;
+}
+
+.content{
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr;
+    gap: 10px;
+
+}
+.img1{
+display: block;
+    width:100%;
+    height:auto;
+
+}
+.caption {
+    margin-top: 8px;
+    font-size: 11px;
+    color: #333;
+}
+.content img{
+    width: 100%;
+
+}
+@media (min-width: 500px) {
+    .content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 700px) {
+    .content{
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+    .content img{
+        max-width:230px;
+    }
+}
+
+
