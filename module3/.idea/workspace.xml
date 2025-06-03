@@ -5,7 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74d70b84-725e-462c-ad1d-efa8d743881a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/case_study_database/khunghiduongfurama.sql" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_database/khunghiduongfurama.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai_9_student/src/main/java/com/example/bai_9_student/controller/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai_9_student/src/main/java/com/example/bai_9_student/entity/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai_9_student/src/main/java/com/example/bai_9_student/entity/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai_9_student/src/main/java/com/example/bai_9_student/repository/IStudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai_9_student/src/main/java/com/example/bai_9_student/repository/StudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai_9_student/src/main/java/com/example/bai_9_student/service/IService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai_9_student/src/main/java/com/example/bai_9_student/service/IStudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai_9_student/src/main/java/com/example/bai_9_student/service/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai_9_student/src/main/webapp/WEB-INF/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai_9_tong_quan_web/src/main/java/com/example/bai_9_tong_quan_web/DiscountServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai_9_tong_quan_web/src/main/webapp/WEB-INF/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_bai_9_student/src/main/java/com/example/demo_bai_9_student/controller/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_bai_9_student/src/main/java/com/example/demo_bai_9_student/entity/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_bai_9_student/src/main/java/com/example/demo_bai_9_student/entity/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_bai_9_student/src/main/java/com/example/demo_bai_9_student/repository/IStudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_bai_9_student/src/main/java/com/example/demo_bai_9_student/repository/StudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_bai_9_student/src/main/java/com/example/demo_bai_9_student/service/IService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_bai_9_student/src/main/java/com/example/demo_bai_9_student/service/IStudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_bai_9_student/src/main/java/com/example/demo_bai_9_student/service/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_bai_9_student/src/main/webapp/WEB-INF/view/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_bai_9_student/src/main/webapp/WEB-INF/view/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_student/src/main/java/com/example/demo_student/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_student/src/main/java/com/example/demo_student/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_student/src/main/java/com/example/demo_student/entity/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_student/src/main/java/com/example/demo_student/entity/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_student/src/main/java/com/example/demo_student/repository/IStudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_student/src/main/java/com/example/demo_student/repository/StudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_student/src/main/java/com/example/demo_student/service/IService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_student/src/main/java/com/example/demo_student/service/IStudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_student/src/main/java/com/example/demo_student/service/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_student/src/main/webapp/WEB-INF/view/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,22 +54,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/codegym/module3",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "D:/codegym/module3/module3/src/Main.java",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/codegym/module3/module3&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/codegym/module3/module3/src/Main.java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="module3" />
@@ -70,6 +101,8 @@
       <updated>1747617536068</updated>
       <workItem from="1747617537157" duration="620000" />
       <workItem from="1748247162577" duration="158000" />
+      <workItem from="1748916037669" duration="243000" />
+      <workItem from="1748916452623" duration="163000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="924e5883-b805-4fc7-bf7c-a35d0aec976b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/thuc_hanh/doi_tien/src/main/webapp/converter.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_9_student/src/main/java/com/example/bai_9_student/controller/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_9_student/src/main/java/com/example/bai_9_student/entity/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_9_student/src/main/java/com/example/bai_9_student/entity/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_9_student/src/main/java/com/example/bai_9_student/repository/IStudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_9_student/src/main/java/com/example/bai_9_student/repository/StudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_9_student/src/main/java/com/example/bai_9_student/service/IService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_9_student/src/main/java/com/example/bai_9_student/service/IStudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_9_student/src/main/java/com/example/bai_9_student/service/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_9_student/src/main/webapp/WEB-INF/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_9_tong_quan_web/src/main/java/com/example/bai_9_tong_quan_web/DiscountServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_9_tong_quan_web/src/main/webapp/WEB-INF/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo_bai_9_student/src/main/java/com/example/demo_bai_9_student/controller/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo_bai_9_student/src/main/java/com/example/demo_bai_9_student/entity/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo_bai_9_student/src/main/java/com/example/demo_bai_9_student/entity/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo_bai_9_student/src/main/java/com/example/demo_bai_9_student/repository/IStudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo_bai_9_student/src/main/java/com/example/demo_bai_9_student/repository/StudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo_bai_9_student/src/main/java/com/example/demo_bai_9_student/service/IService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo_bai_9_student/src/main/java/com/example/demo_bai_9_student/service/IStudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo_bai_9_student/src/main/java/com/example/demo_bai_9_student/service/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo_bai_9_student/src/main/webapp/WEB-INF/view/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo_bai_9_student/src/main/webapp/WEB-INF/view/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo_student/src/main/java/com/example/demo_student/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo_student/src/main/java/com/example/demo_student/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo_student/src/main/java/com/example/demo_student/entity/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo_student/src/main/java/com/example/demo_student/entity/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo_student/src/main/java/com/example/demo_student/repository/IStudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo_student/src/main/java/com/example/demo_student/repository/StudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo_student/src/main/java/com/example/demo_student/service/IService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo_student/src/main/java/com/example/demo_student/service/IStudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo_student/src/main/java/com/example/demo_student/service/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo_student/src/main/webapp/WEB-INF/view/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2xyi05ESYYTGa7JkBY5e8pWQ5dX" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/codegym/module3/module3/bai_10_JSTL&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="Tomcat 10.1.41" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.41" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment>
+        <artifact name="Gradle : com.example : bai_10_JSTL-1.0-SNAPSHOT.war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/Gradle___com_example___bai_10_JSTL_1_0_SNAPSHOT_war" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings />
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : com.example : bai_10_JSTL-1.0-SNAPSHOT.war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26053.27" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26053.27" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="924e5883-b805-4fc7-bf7c-a35d0aec976b" name="Changes" comment="" />
+      <created>1748916490050</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1748916490050</updated>
+      <workItem from="1748916491193" duration="888000" />
+      <workItem from="1748922668257" duration="113000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

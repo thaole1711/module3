@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="demo_student.main:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/demo_student_main_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="demo_student.main" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Gradle: javax.servlet:jstl:1.2" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="demo_student.main/web/Web Gradle : demo_student-1.0-SNAPSHOT.war" />
+      <element id="artifact" artifact-name="Gradle : com.example : demo_student-1.0-SNAPSHOT.war" />
+    </root>
+  </artifact>
+</component>
