@@ -1,5 +1,6 @@
 package com.example.quan_ly_san_pham.sevice;
 
+import com.example.quan_ly_san_pham.dto.PhoneDtoRepose;
 import com.example.quan_ly_san_pham.model.Phone;
 import com.example.quan_ly_san_pham.repository.IPhoneRepository;
 import com.example.quan_ly_san_pham.repository.PhoneRepository;
@@ -10,39 +11,39 @@ import java.util.List;
 public class PhoneSevice implements IPhoneSevice {
     private IPhoneRepository iPhoneRepository =new PhoneRepository();
     @Override
-    public List<Phone> findAll() {
+    public List<PhoneDtoRepose> findAll() {
         return iPhoneRepository.findAll();
     }
 
     @Override
-    public void add(Phone phone) {
-        iPhoneRepository.add(phone);
+    public boolean add(Phone phone) {
+     return iPhoneRepository.add(phone);
 
     }
 
     @Override
-    public void update(Phone phone) {
-        iPhoneRepository.update(phone);
+    public boolean update(Phone phone) {
+       return iPhoneRepository.update(phone);
 
     }
 
     @Override
-    public void delete(int id) {
-       iPhoneRepository.delete(id);
+    public boolean delete(int id) {
+       return iPhoneRepository.delete(id);
 
 
     }
 
     @Override
-    public void search(String name) {
+    public List<PhoneDtoRepose> search(String name) {
+        return iPhoneRepository.search(name);
 
     }
 
-    public IPhoneRepository getiPhoneRepository() {
-        return iPhoneRepository;
+    @Override
+    public Phone findPhoneById(int id) {
+      return   iPhoneRepository.findPhoneById(id);
     }
 
-    public void setiPhoneRepository(IPhoneRepository iPhoneRepository) {
-        this.iPhoneRepository = iPhoneRepository;
-    }
+
 }

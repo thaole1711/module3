@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: LENOVO
@@ -12,17 +13,23 @@
 </head>
 <body>
 <form method="post">
-  <label>Mã điện thoại</label>
-  <input name="ma" required value="${phone.ma}">
-  <lable>Tên điện thoại</lable>
-  <input name="ten" required value="${phone.ten}">
-  <label>Giá điện thoại</label>
-  <input name="gia" required value="${phone.gia}">
-  <label>Mô tả điện thoại</label>
-  <input name="mo_ta" required value="${phone.mo_ta}">
-  <label>Nhà sản xuất điện thoại</label>
-  <input name="nha_san_xuat" required value="${phone.nha_san_xuat}">
-  <button type="submit">Thêm mới</button>
+
+    <lable>Tên điện thoại</lable>
+    <input name="ten" required value="${phone.ten}">
+    <label>Giá điện thoại</label>
+    <input name="gia" required value="${phone.gia}">
+    <label>Mô tả điện thoại</label>
+    <input name="mo_ta" required value="${phone.mo_ta}">
+    <label>Nhà sản xuất điện thoại</label>
+    <input name="nha_san_xuat" required value="${phone.nha_san_xuat}">
+    <select name="loai">
+        <option>Loại điện thoại</option>
+        <c:forEach var="loaiPhone" items="${loaiPhone}">
+            <option value="${loaiPhone.ma}">${loaiPhone.ten_loai}</option>
+        </c:forEach>
+    </select>
+
+    <button type="submit">Thêm mới</button>
 </form>
 </body>
 </html>

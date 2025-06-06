@@ -6,13 +6,23 @@ public class Phone {
     private double gia;
     private String mo_ta;
     private String nha_san_xuat;
+    private int loai;
 
-    public Phone(int ma, String ten, double gia, String mo_ta, String nha_san_xuat) {
+    public Phone(int ma, String ten, double gia, String mo_ta, String nha_san_xuat, int loai) {
         this.ma = ma;
         this.ten = ten;
         this.gia = gia;
         this.mo_ta = mo_ta;
         this.nha_san_xuat = nha_san_xuat;
+        this.loai = loai;
+    }
+
+    public Phone(String ten, double gia, String mo_ta, String nha_san_xuat, int loai) {
+        this.ten = ten;
+        this.gia = gia;
+        this.mo_ta = mo_ta;
+        this.nha_san_xuat = nha_san_xuat;
+        this.loai = loai;
     }
 
     public int getMa() {
@@ -45,6 +55,14 @@ public class Phone {
 
     public void setMo_ta(String mo_ta) {
         this.mo_ta = mo_ta;
+    }
+
+    public int getLoai() {
+        return loai;
+    }
+
+    public void setLoai(int loai) {
+        this.loai = loai;
     }
 
     public String getNha_san_xuat() {
